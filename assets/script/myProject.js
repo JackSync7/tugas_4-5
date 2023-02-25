@@ -41,9 +41,9 @@ const showData = () => {
       <img src="${dataFull[i].image}" alt="">
   </div>
   <div>
-      <div class="title-card"> ${dataFull[i].projectName} - ${
-      dataFull[i].endDate
-    }</div>
+      <div class="title-card"> <a href="detail-project.html"> ${
+        dataFull[i].projectName
+      } - ${dataFull[i].endDate} </a></div>
       <div class="bulan"> durasi: ${getDuration(
         dataFull[i].startDate,
         dataFull[i].endDate
