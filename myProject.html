@@ -1,0 +1,133 @@
+
+<html>
+    <head>
+      
+        <title>Contact-ME</title>
+       <link rel="stylesheet" href="assets/css/myProject.css" >
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" /> 
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+            <ul>
+                <li><img src="assets/images/brandred.png" alt=""></li>
+                <li> <a href="index.html"> <b> Home </b></a> </li>
+                <li> <a href="#"> My Project </a></li>
+            </ul>
+        </div>
+        <div  class="nav-right">
+             <a href="">contact me</a>
+        </div>
+        </nav>
+            <div>
+                <h1 class="title">ADD MY PROJECT</h1>
+            </div>
+        <form action="" onsubmit="getData(event)">
+            <div class="inputText">
+                <div>
+                    <label for="projectName">Project Name </label>
+                    <input type="text" id="projectName" > 
+                </div>
+                <div class="date">
+                    <div>
+                        <label for="startDate">Start Date </label>
+                        <input type="date" name="" id="startDate" >
+                    </div>
+                    <div >
+                        <label for="endDdate">End Date </label>
+                        <input type="date" name="" id="endDate" >
+                    </div>
+                </div>
+            <div class="desc">
+                <div>
+                    <label for="Description">Description </label>
+                    <input type="text" id="Description"  > 
+                </div>
+            </div>
+            <div class="tech">
+                <label>Technologies </label>
+                <div class="label">
+                    <div >
+                        <div class="logos">
+                            <div>
+                                <input type="checkbox" id="nodeJs" name="vehicle1" value="fa-brands fa-node-js fa-xl">
+                            </div>
+                            <div>
+                                <label for="nodeJs"> Node Js</label>
+                            </div>
+                        </div>
+                        <div class="logos">
+                            <div>
+                                <input type="checkbox" id="reactJs" name="vehicle1" value="fa-brands fa-react fa-xl">
+                            </div>
+                            <div>
+                                <label for="reactJs"> React Js</label> 
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="logos">
+                            <div>
+                                <input type="checkbox" id="python" name="vehicle1" value="fa-brands fa-python fa-xl">
+                            </div>
+                            <div>
+                                <label for="python"> Python</label>
+                            </div>
+                        </div>
+                        <div class="logos">
+                            <div>
+                                <input type="checkbox" id="php" name="vehicle1" value="fa-brands fa-php fa-xl">
+                            </div>
+                            <div>
+                                <label for="php"> PHP</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upload">
+                <label for="image">Upload Image</label>
+                <div style="margin:0; display:flex">
+                    <input type="file" id="image" > <i style="position: relative; top: 25px; right:25px " class="fa-solid fa-paperclip"></i>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit" id=>submit</button>
+                
+            </div>
+</div>
+        </form>
+        <div class="myproject">
+            <p class="judul">MY PROJECT</p>
+            <div id="contents">
+                <div class="card">
+                    <div class="upper">
+                        <img src="assets/images/dev.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="title-card"> Laptop Programing</div>
+                        <div class="bulan"> durasi: 3 bulan </div>
+                    </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam ducimus.</p>
+                        </div>
+                    <div>
+                        <div class="logo" id="logo">
+                            <i class="fa-brands fa-node-js fa-xl"></i>
+                            <i class="fa-brands fa-react fa-xl"></i>
+                            <i class="fa-brands fa-python fa-xl"></i>
+                            <i class="fa-brands fa-php fa-xl"></i>
+                        </div>
+                        <div class="action">
+                            <button>edit</button>
+                            <button>delete</button>
+                        </div>
+                    </div>
+             </div>
+             
+        </div>
+        
+    </body>
+    <script src="assets/script/myProject.js"></script>
+    
+</html>

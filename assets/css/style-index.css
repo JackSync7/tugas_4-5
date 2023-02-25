@@ -1,0 +1,164 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #E3E7EB;
+}
+
+.navbar{
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px rgb(217, 217, 217);
+}
+
+.navbar img{
+    width: 50px;
+}
+
+.nav-left{
+    padding-right: 20px;
+    width: 100%;
+}
+
+.nav-left a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.nav-left ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+ }
+
+ .nav-left ul li{
+   padding-left: 40px;
+  
+ }
+
+ .nav-right{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+    padding-right: 50px;
+ 
+ }
+ 
+ .nav-right a{
+    background-color: rgb(13, 12, 12);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+ }
+
+ .nav-right a:hover{
+    font-size: 120%;
+    background-color: coral;
+    transition: 0.3s;
+ }
+
+ .container{
+    width: 85%;
+    height: 600px;
+    background-color: azure;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgb(216, 216, 216);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .left-side{
+    margin-top: 60px;
+  
+    padding: 20px;
+}
+.container .left-side p{
+    
+    padding-left: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.container .left-side h2{
+   
+    padding-left: 50px;
+    font-size: 35px;
+   
+}
+
+.container .left-side a{
+   
+    color: #000000;text-decoration: none; 
+   
+}
+
+.container .left-side .btt{
+   
+    margin-top: 60px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container .left-side button{
+   
+    background-color: #181823; cursor: pointer;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    font-size: 18px;
+    width: 125px;
+    height: 30px;
+    
+   
+}
+
+.container .left-side .sosmed{
+   
+    margin: 60px 30px; 
+}
+
+.container .left-side .sosmed a{
+   
+    color: #000000;text-decoration: none;
+}
+
+
+.container .right-side{
+    margin: 70px;
+}
+
+.container img{
+    width: 350px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.profile{
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(215, 215, 215);
+}
+
+.container .right-side .nama{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.container .right-side .prof{
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
