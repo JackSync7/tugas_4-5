@@ -242,6 +242,12 @@ img{
     flex-direction: row;
 }
 
+#contents1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .card{
     width: 300px;
     height: 400px;
@@ -253,6 +259,13 @@ img{
     padding-top: 10px;
     margin-top: 20px;
 }
+
+.text-card{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
 .upper p{
     margin: 0;
   

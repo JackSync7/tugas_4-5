@@ -22,8 +22,10 @@
         </div>
         
     </div>
+    <div id="transform">
     <div class="container">
         <h1>Dumbways Web App</h1>
+        <div id="transform">
        <div class="head-content">
             <div class="gambar">
                 <img src="assets/images/dev.jpg" alt="">
@@ -43,7 +45,6 @@
                 <div class="duration2">
                     <p class="sub-title" id="tech">Technologies</p>
                     <div class="sub-bottom" >
-                        <div >
                             <div>
                                 <i class="fa-brands fa-react fa-xl"></i>
                                 <span>React JS</span>
@@ -52,8 +53,6 @@
                                 <i class="fa-brands fa-node-js fa-xl"></i>
                                 <span>Node JS</span>
                             </div>
-                        </div>
-                        <div class="kanan">
                             <div>
                                 <i class="fa-brands fa-square-js fa-xl"></i>
                                 <span>JavaScript</span>
@@ -62,7 +61,7 @@
                                 <i class="fa-solid fa-bolt fa-xl"></i>
                                 <span>Socket IO</span>
                             </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -83,5 +82,72 @@
 The Art, Science, and Engineering of Programming aims at closing this gap by focusing primarily on programming: the art itself (programming styles, pearls, models, languages), the emerging science of understanding what works and what doesn’t work in general and in specific contexts, as well as more established engineering and mathematical perspectives.
             </p>
         </div>
+    </div>
 </body>
+<script>
+    let parameters = new URLSearchParams(window.location.search)
+    let projectName = parameters.get("projectName")
+    let startDate = parameters.get("startDate")
+    let endDate = parameters.get("endDate")
+    let description = parameters.get("description")
+    let image = parameters.get("image")
+    let tech = parameters.get("tech")
+    let duration = parameters.get("duration")
+    
+
+    document.getElementById("transform").innerHTML = `
+    <div id="transform">
+    <div class="container">
+        <h1>${projectName}</h1>
+        <div id="transform">
+       <div class="head-content">
+            <div class="gambar">
+                <img src="${image}" alt="">
+            </div>
+            <div class="right-content">
+                <div class="duration">
+                    <p class="sub-title">Duration</p>
+                    <div>
+                        <i class="fa-solid fa-calendar-days fa-xl"></i>
+                        <span>${startDate} - ${endDate}</span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-clock fa-xl"></i>
+                        <span>${duration}</span>
+                    </div>
+                </div>
+                <div class="duration2">
+                    <p class="sub-title" id="tech">Technologies</p>
+                    <div class="sub-bottom" >
+                        <div>
+                                <i class="fa-brands fa-react fa-xl"></i>
+                                <span>React JS</span>
+                            </div>
+                            <div class="react">
+                                <i class="fa-brands fa-node-js fa-xl"></i>
+                                <span>Node JS</span>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-square-js fa-xl"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="react">
+                                <i class="fa-solid fa-bolt fa-xl"></i>
+                                <span>Socket IO</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div>
+            <p style="text-indent: 50px;  line-height: 1.8; margin-top: 40px; text-align: justify;"> 
+                ${description}
+            </p>
+        </div>
+    </div>
+    `;
+    // tech.length.map(function (e) {
+    //                         return '<div><i class="' + e + '></i><span>React JS</span></div>';
+    //                     })
+</script>
 </html>
